@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <a data-testid="hngLink" href="http://hng.tech/learn">HNG</a>
+        <a data-testid="keywordLink" href="http://keyword.dog/">Keyword</a>
+        <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site/"
+          >Web scrape</a
+        >
+      </div>
+      <div class="hero">
+        <picture>
+          <source media="(min-width:541px)" srcset="images/profile-image.jpg" />
+          <source
+            media="(max-width:540px)"
+            srcset="images/profile-image_mobile.jpg"
+          />
+          <img
+            data-testid="slackProfilePicture"
+            src="./images/profile-image.jpg"
+            alt="profile image"
+          />
+        </picture>
+
+        <div class="hero-content">
+          <h1 class="hero-content__heading">
+            Hi, I am
+            <span data-testid="slackDisplayName">dmystical-coder</span>, a
+            Frontend Web Developer
+          </h1>
+          <p class="hero-content__paragraph">
+            I am a budding Frontend web developer passionate about leveraging my
+            skills in responsive design, component based architecture, version
+            control & version control hosting services, and developer tools to
+            contribute to meaningful projects that have a positive impact on
+            society.
+          </p>
+          <a href="#" class="hero-content__btn">Download Resume</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="main__heading">Goals</h2>
+      <p class="main__paragraph">
+        I aim to become a well-rounded developer, capable of contributing
+        effectively to any tech project I'm a part of while also contributing to
+        the tech community and advancing my career.
+      </p>
+      <div class="goals">
+        <div class="goal-card">
+          <span>1</span>
+          <h3 class="goal-card__heading">
+            Deepen my knowledge of frontend development
+          </h3>
+          <div class="tags">
+            <p>Months 1-6</p>
+            |
+            <p>Foundation</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Master the basics of the React library.</li>
+            <li>Enhance problem-solving and algorithm skills.</li>
+            <li>Attend Communication and team collaboration workshops.</li>
+          </ul>
+        </div>
+        <div class="goal-card">
+          <span>2</span>
+          <h3 class="goal-card__heading">Expand Skills and Initial projects</h3>
+          <div class="tags">
+            <p>Months 7-12</p>
+            |
+            <p>Foundation</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Learn the basics of Node and express, databases.</li>
+            <li>Plan and start developing personal projects.</li>
+            <li>Attend local meetups and tech conferences.</li>
+          </ul>
+        </div>
+        <div class="goal-card">
+          <span>3</span>
+          <h3 class="goal-card__heading">
+            Intermediate development and contributions
+          </h3>
+          <div class="tags">
+            <p>Months 13-18</p>
+            |
+            <p>Intermediate</p>
+          </div>
+
+          <ul class="bullets">
+            <li>Explore advanced React concepts</li>
+            <li>
+              Build a fullstack application with a backend in Node.js and a
+              frontend in React.
+            </li>
+            <li>
+              Participate in at least one competitive programming contest.
+            </li>
+            <li>Start contributing to open-source.</li>
+          </ul>
+        </div>
+        <div class="goal-card">
+          <span>4</span>
+          <h3 class="goal-card__heading">Leadership and Advanced Projects</h3>
+          <div class="tags">
+            <p>Months 19-24</p>
+            |
+            <p>Advanced</p>
+          </div>
+
+          <ul class="bullets">
+            <li>
+              Take on a leadership role in an open-source project or company.
+            </li>
+            <li>
+              Plan for the next phase of career development, aiming for a senior
+              developer role.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/abdulsalam-baruwa/" target="_blank"
+          ><img src="./images/Linkedin.svg" alt="Linkedin icon"
+        /></a>
+        <a href="https://twitter.com/dmystical_coder" target="_blank"
+          ><img src="./images/twitter.svg" alt="Twitter icon"
+        /></a>
+      </div>
+      <p class="footer__paragraph">
+        <span data-testid="currentDay" id="day"></span>,
+        <span data-testid="currentTimeUTC" id="time"></span>
+      </p>
+      <p class="footer__paragraph">
+        Copyright &copy; <span id="year"></span>.
+        <span data-testid="slackEmail">dmystical.coder@gmail.com</span>
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
